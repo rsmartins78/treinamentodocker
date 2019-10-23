@@ -1,0 +1,17 @@
+body {
+    background-color: #000;
+}
+
+.helloworld-image {
+    width: 50%;
+    height: auto;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+}

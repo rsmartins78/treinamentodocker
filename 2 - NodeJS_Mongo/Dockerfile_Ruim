@@ -1,0 +1,10 @@
+FROM node:12
+WORKDIR /demoApp
+EXPOSE 3001
+COPY src/ /demoApp/src
+COPY public/ /demoApp/public
+COPY server.js /demoApp/
+COPY package-lock.json /demoApp/
+COPY package.json /demoApp/
+RUN npm install
+ENTRYPOINT [ "npm", "run", "app" ]

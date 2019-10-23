@@ -1,0 +1,9 @@
+FROM httpd:2.4.41
+
+ADD helloworld.jpg /usr/local/apache2/htdocs/
+
+ADD index.html /usr/local/apache2/htdocs/
+
+ADD style.css /usr/local/apache2/htdocs/
+
+EXPOSE 80 
