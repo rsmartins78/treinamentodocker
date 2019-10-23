@@ -24,6 +24,11 @@ services:
       MONGO_URI: mongodb://mongo:27017/nodeapi
     depends_on:
       - mongo
+    volumes:
+      - mongo-dir:/data/db
+
+volumes:
+  mongo-dir:
 
 networks:
   demo-app:
